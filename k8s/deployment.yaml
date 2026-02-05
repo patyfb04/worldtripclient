@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: worldtripclient
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: worldtripclient
+  template:
+    metadata:
+      labels:
+        app: worldtripclient
+    spec:
+      containers:
+        - name: worldtripclient
+          image: worldtripapp.azurecr.io/worldtripclient:IMAGE_TAG_PLACEHOLDER
+          ports:
+            - containerPort: 80
