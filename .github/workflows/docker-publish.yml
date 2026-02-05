@@ -12,7 +12,7 @@ env:
   RESOURCE_GROUP: worldtrip-rg
   AZURE_REGION: eastus
   AKS_CLUSTER: worldtrip-kube-cluster
-  K8S_MANIFEST_PATH: k8s/worldtripclient
+  K8S_MANIFEST_PATH: k8s
 
 jobs:
   build-and-deploy:
